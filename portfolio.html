@@ -1,0 +1,312 @@
+<!-- new technologies used
+typed.js:A jquery typing animation script -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+      body{
+        background-color: rgb(0, 7, 28);
+        color: white;
+      }  
+      .left{
+        font-size: 40px;
+        font-family: 'Kaushan Script', cursive;
+      }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(9, 0, 85);
+        height: 80px;
+        position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+        font-weight: 400;
+        /* display: inline-flex; */
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        text-decoration: none; 
+        margin: 0 23px;
+        font-size: 19px;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav ul li a{
+       color: white;
+       font-weight: bolder;
+        text-decoration: none; 
+      }
+      nav ul li a:hover{
+        color: rgb(189, 189, 247);
+        font-size: 1.2rem;
+      }
+      .firstsection{
+        display: flex;
+        /* justify-content: space-around; */
+        margin-bottom: 88px;
+        height: 500px;
+        /* align-items: center; */
+      }
+      .leftsection{
+        width: 26%;
+        height: 00px;
+        padding-right: 20px;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600px;
+        margin-top: 90px;
+        align-items: left;
+        margin-left: 210px;
+      }
+      .leftsection p{
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 2px 4px #fffefe;
+        padding-top: 20px;
+      }
+      .leftsection .btn{
+        font-size: 15px;
+        height: 29px;
+        margin-top: 28px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 7px;
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        border-color: white;
+        border-width: 2px;
+      }
+      .leftsection .btn:hover{
+          background-color: #ffffffc2;
+      }
+      .rightsection{
+        background-color:  rgb(0, 7, 28);
+        width: 40%;
+        /* position: absolute; */
+        align-items: right;
+       /* display: flex; */
+      }
+      .rightsection img{
+        border-color: white;
+        position: absolute;
+        left: 70%;
+        height: 600px;
+        transform: translateX(-50%);
+        padding-top:0px ;
+        background-repeat: no-repeat;
+        transition: bottom 1s left 1s;
+      }
+      .neon{
+        color: rgb(140, 132, 255);
+        text-shadow: 2px 2px 4px rgb(208, 205, 255);
+      }
+      #element{
+        color: rgb(140, 132, 255);
+        font-family: 'Dancing Script', cursive;
+        text-shadow: 2px 2px 4px rgb(208, 205, 255);
+      }
+      .firstafter{
+        height: 100%;
+        margin-bottom: 8%;
+      }
+      .firstafter h1{
+        margin-left: 170px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3%;
+        font-weight: bolder;
+      }
+      .thirdsection h1{
+        margin-left: 170px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3%;
+        font-weight: bolder;
+      }
+      .thirdsection h3{
+        margin-left: 190px;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 3%;
+        font-weight: bolder;
+      }
+      .thirdsection p {
+        text-align: center;
+      }
+      .thirdsection p span{
+       background-color: rgba(255, 255, 255, 0.619);
+       border: white;
+       border-radius: 10px;
+       padding: 10px 10px;
+       
+      }
+      .firstafter p{
+        font-weight: 600px;
+        padding: 10px 0;
+        font-size: 19px;
+        color: white;
+        border-bottom:1px solid white;
+        max-width: 40%;
+        text-align: center;
+        margin-left: 35%;
+       
+      }
+      .firstafter p span{
+        font-weight: 500px;
+        color: #fffefed2;
+      }
+      .secondsection{
+        margin-left: 11%;
+        margin-top: 2%;
+        font-family: 'Poppins', sans-serif;
+      }
+     
+      .secondright img{
+        padding-left: 50px;
+        padding-top: 70px;
+        display: block;
+      }
+      .secondleft img{
+        padding-left: 50px;
+        padding-top: 70px;
+        display: block;
+      }
+      .secondright{
+        text-align: center;
+        margin-right: 50px;
+        list-style: none;
+      }
+      .thirdsection H3{
+        text-shadow: 2px 2px 5px white;
+        margin-top: 20px;
+      }
+      .fourthsection{
+        color: white;
+        padding: 8px 8px;
+        text-align: center;
+        border: 2px double white;
+        font-size: larger;
+        margin: 40px 94px;
+      }
+     main hr{
+        border: 0;
+        height: 1.2px;
+        margin: 40px 94px;
+        background-color:  rgb(208, 205, 255);
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rashmi's Portfolio</div>
+            <div class="right">
+                <ul>
+                  <li> <a href="#one"> HOME</a></li>
+                   <li><a href="#two">ABOUT</a></li>
+                   <li><a href="#three">PROJECTS</a></li>
+                   <li><a href="#four"> SKILLS</li></a></li>
+                   <li><a href="#five"> CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="one"class="firstsection">
+                <div class="leftsection">
+                 <h2>
+                    Greetings
+                 </h2><p>My name is <span class="neon">RASHMI</span></p>
+                 <p>and i am a passionate </p>
+                 
+                 <span id="element"></span>
+                 <div class="button">
+                  <button class="btn">Download Resume</button>
+                  <button class="btn">visit Github</button>
+                 </div>
+                </div>
+                <div class="rightsection">
+                 <img src="neonborder.png" width="500px" height="700px">
+                 <img class="rashmi"src="rashmi-removebg-preview.png" width="500px"  height="700px">
+                </div>
+        </section>
+        <section id="two"class="firstafter">
+          <hr>
+          <h1>
+            ABOUT ME:
+          </h1>
+          <P><b>Name:</b> <span>Rashmi Raj</span></P>
+          <P><b>Address: </b><span>Kallu Bara Bari Baazar Munger,Bihar</span></P>
+          <P><b>College : </b><span>NIT Patna</span></P>
+          <p><b>Degree : </b><span>CSE</span></p>
+          <p><b>Graduation Year : </b><span>2026</span></p>
+          <p><b>Contact NO. : </b><span>6203265797</span></p>
+          <p><b>Email : </b><span>rashmir.ug22.cs@nitp.ac.in</span></p>
+        </section>
+        <hr>
+        <section id="three"class="secondsection">
+            <h1>My projects:</h1>
+           
+            <div class="secondleft">
+              <img src="report.png" width="60px">
+            </div>
+            <div class="secondright">
+              <h3>Portfolio Website</h3>
+             
+                <p>--A personal portfolio website designed using HTML,CSS and JS.</p>
+              
+                <P>--having sections such as projects , skills and contact me page.</p>
+             
+                <p>--with technologies used such as typed.js</p>
+                <img src="report.png" width="60px">
+             <h3>Calculator</h3>
+             <P>--A calculator designed using HTML,CSS and Js</P>
+             <P>--with functionalities of delete,all clear and every king of basic arithmetics</P>
+            </div>
+        </section>
+        <hr>
+        <section id="four"class="thirdsection">
+          <h1>SKILLS: </h1>
+          <h3>TECHNICAL SKILLS: </h3>
+          <p>  <SPAN>HTML</SPAN>   <span>CSS</span>    <span>JAVASCRIPT</span>   <span>C++</span>  <span>C</span>  <span>DSA with c++</span>  <span>React</span>  <span>fimiliar with sql</span> <span>operating system</span> <span>DBMS</span>  </p>
+          <h3>SOFT SKILLS: </h3>
+          <p> <SPAN>Teamwork</SPAN> <SPAN>Enthusiasm</SPAN> <SPAN>Hardworking</SPAN> <SPAN>communication</SPAN>   </p>
+        </section>
+        <hr>
+        <br><br>
+        <section id="five" class="fourthsection">
+          <h1>contact Me</h2>
+            <br>
+            <div clas="contact">
+              <p>Address: Ganga Hostel , NIT Patna ,<br> 
+                Ashok Rajpath
+                <br>
+                 Pincode: 800005</p>
+              <button>Call me Now</button>
+              <p><b>My Email:</b>rashmir.ug22.cs@nitp.ac.in</p>
+              <br>
+              <P>Contact no:+91-7667XXXXXX,+91-8656XXXXXX </P>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['enthusiastic coder', 'web developer. '],
+        typeSpeed: 70,
+      });
+    </script>
+</body>
+</html>
